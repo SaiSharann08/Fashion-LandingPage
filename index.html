@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SA — Fashion</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="topbar container">
+      <div class="social">
+        <!-- real login pages -->
+        <a aria-label="Instagram" class="icon" href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" fill="none"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" fill="none"/><circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"/></svg>
+        </a>
+        <a aria-label="Facebook" class="icon" href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v5H14v-5h2.6l.4-3H14V8.5c0-.3.2-.5.5-.5Z" fill="currentColor"/></svg>
+        </a>
+        <a aria-label="WhatsApp Web" class="icon" href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.6-1.2A9 9 0 1 0 12 3Zm0 2a7 7 0 1 1 0 14c-1.1 0-2.1-.2-3-.6l-.3-.1-2.8.8.8-2.7-.2-.3A7 7 0 0 1 12 5Zm-3.1 3.6c.2-.3.4-.3.6-.3h.5c.1 0 .3 0 .4.3.1.4.5 1.2.6 1.3.1.2.1.3 0 .5-.2.2-.4.5-.6.7-.2.1-.1.3 0 .4.2.3.8 1.3 1.9 1.7.9.4 1 .3 1.3 0l.8-1c.2-.2.3-.2.5-.1.2.1 1.4.7 1.6.8.2.1.3.2.3.4 0 .3-.1.9-.6 1.4-.5.6-1.2.6-2 .6-.7 0-1.4-.1-2.2-.5a7.5 7.5 0 0 1-2.7-2 6.6 6.6 0 0 1-1.4-2.5c-.3-.9 0-1.6.4-2.1Z" fill="currentColor"/></svg>
+        </a>
+      </div>
+
+      <!-- SA monogram (stacked serif) -->
+      <a href="#top" class="logo" aria-label="SA Home">
+        <span class="logo-mono"><span class="s">S</span><span class="a">A</span></span>
+      </a>
+
+      <div class="actions">
+        <button class="icon" id="openSearch" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon cart" id="openCart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          <span class="cart-dot" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav container" aria-label="Primary">
+      <ul>
+        <li><a class="active" href="#top">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============== MAIN ============== -->
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <button class="hero-arrow left" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+        <div class="hero-copy">
+          <h1>Get up to 30% Off New<br>Arrivals</h1>
+          <a class="btn btn-solid" href="#shop">Shop Now</a>
+        </div>
+
+        <div class="hero-media">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.220DTDtrhuKGfxwwLr2twQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Model wearing cap and jacket">
+        </div>
+
+        <button class="hero-arrow right" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </section>
+
+    <!-- FEATURES (below the button) -->
+    <section class="features container" aria-label="Store features">
+      <article class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h10v7H3zM13 10h4l3 3v1h-7z" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="7.5" cy="18" r="1.3" fill="currentColor"/><circle cx="16.5" cy="18" r="1.3" fill="currentColor"/></svg></div>
+        <div><h3>Shipping Worldwide</h3><p>Free shipping on all US order or order above $100</p></div>
+      </article>
+      <article class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-4 4 4 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></div>
+        <div><h3>14 Days Return</h3><p>Simply return it within 30 days for an exchange</p></div>
+      </article>
+      <article class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></div>
+        <div><h3>Security Payment</h3><p>We ensure secure payment with SSL</p></div>
+      </article>
+      <article class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M8 15c1.3 1 2.7 1.5 4 1.5s2.7-.5 4-1.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></svg></div>
+        <div><h3>24/7 Support</h3><p>Contact us 24 hours a day, 7 days a week</p></div>
+      </article>
+    </section>
+
+    <!-- TRENDING PRODUCTS -->
+    <section class="trending container" id="shop">
+      <h2>Trending Products</h2>
+      <p class="muted center">Follow the most popular trends and get exclusive items from Faeta shop.</p>
+
+      <div class="product-grid" id="productGrid">
+        <!-- each card has a top-right CART button -->
+        <article class="card" data-id="p1" data-title="miley things - hair scarf" data-price="22">
+          <div class="card-media">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.mWGLpLiwfuradvkCkDjrwgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Miley Things - Hair Scarf">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Miley Things - Hair Scarf</h3><p class="card-price">$22.00</p></div>
+        </article>
+
+        <article class="card" data-id="p2" data-title="ultimate crop bandeau tops" data-price="22">
+          <div class="card-media">
+            <img src="https://images.asos-media.com/products/asos-design-ultimate-cropped-bandeau-in-buttermilk/208542296-1-buttermilk?$n_960w$&wid=952&fit=constrain" alt="Ultimate Crop Bandeau Tops">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Ultimate Crop Bandeau Tops</h3><p class="card-price">$22.00</p></div>
+        </article>
+
+        <article class="card" data-id="p3" data-title="fleece short sleeve sweater" data-price="100">
+          <div class="card-media">
+            <img src="https://media2.newlookassets.com/i/newlook/924179788/womens/clothing/knitwear/light-yellow-short-sleeve-midweight-knit-jumper.jpg?strip=true&qlt=50&w=1024" alt="Fleece Short Sleeve Sweater">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Fleece Short Sleeve Sweater</h3><p class="card-price">$100.00</p></div>
+        </article>
+
+        <article class="card" data-id="p4" data-title="simone ribbed cardigan" data-price="89">
+          <div class="card-media">
+            <img src="https://img.kwcdn.com/thumbnail/s/f3a0f2c99d1ec52fc3f74dcf28917a42_540e44f95f2e.jpg?imageView2/2/w/264/q/70/format/webp" alt="Simone Ribbed Cardigan">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Simone Ribbed Cardigan</h3><p class="card-price">$82.00 – $89.00</p></div>
+        </article>
+
+        <article class="card" data-id="p5" data-title="oversized t-shirt multi-colors" data-price="53">
+          <div class="card-media">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.r1cgAZ-HSYn8EyW5dV2-uQHaJ3?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Oversized T-shirt Multi-colors">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Oversized T-shirt Multi-colors</h3><p class="card-price">$53.00</p></div>
+        </article>
+
+        <article class="card" data-id="p6" data-title="jacket with hood in stone" data-price="298">
+          <div class="card-media">
+            <img src="https://cdn11.bigcommerce.com/s-21x65e8kfn/images/stencil/original/products/74782/386223/MON3995_1000_1__12478.1735028746.jpg" alt="Jacket with Hood in Stone">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Jacket with Hood in Stone</h3><p class="card-price">$298.00</p></div>
+        </article>
+
+        <article class="card" data-id="p7" data-title="butterfly charm hoop earrings" data-price="71">
+          <div class="card-media">
+            <img src="https://i.etsystatic.com/8979550/r/il/43d293/6031301378/il_1588xN.6031301378_589m.jpg" alt="Butterfly Charm Hoop Earrings">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Butterfly Charm Hoop Earrings</h3><p class="card-price">$71.00</p></div>
+        </article>
+
+        <article class="card" data-id="p8" data-title="denim jacket sun bleached" data-price="196">
+          <div class="card-media">
+            <img src="https://i.etsystatic.com/54226545/r/il/c60d5c/7128393818/il_1588xN.7128393818_c0f6.jpg" alt="Denim Jacket Sun Bleached">
+            <button class="quick-add" aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1 10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 9Z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 9V7a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+            </button>
+          </div>
+          <div class="card-body"><h3 class="card-title">Denim Jacket Sun Bleached</h3><p class="card-price">$196.00</p></div>
+        </article>
+      </div>
+    </section>
+
+
+        <!-- BANNERS (2 only) -->
+    <section class="banners container">
+      <article class="banner banner-a">
+        <img src="https://media3.newlookassets.com/i/newlook/919538744/womens/clothing/coats-jackets/bright-blue-light-wash-denim-jacket.jpg?strip=true&qlt=50&w=1024" alt="Summer Collection">
+        <div class="banner-copy"><p class="eyebrow">Summer Collection</p><p class="tiny">Starting at <strong>$17.99</strong></p><a class="link-arrow" href="#shop">Shop Now</a></div>
+      </article>
+      <article class="banner banner-b">
+        <img src="https://content.roman.co.uk/images/original/e565c7d4-c243-49f5-9e61-4a0e14985d31.jpg" alt="What's New? Get the glow">
+        <div class="banner-copy"><p class="eyebrow">What's New?</p><p class="tiny">Get the glow</p><a class="link-arrow" href="#shop">Discover Now</a></div>
+      </article>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="contact">
+      <div class="container">
+        <h2>Newsletter</h2>
+        <p class="muted">Subscribe to our newsletter and get 20% off your first purchase</p>
+        <form id="newsletterForm" class="newsletter-form" action="#">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Enter Your Email" required>
+          <button class="send" type="submit" aria-label="Submit email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5l17-8.5-6.8 9 6.8 9-17-8.5Z" stroke="#fff" stroke-width="2" fill="none" stroke-linejoin="round"/></svg></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo" aria-label="SA Home"><span class="logo-mono"><span class="s">S</span><span class="a">A</span></span></a>
+        <p class="muted">The customer is at the heart of our unique business model, which includes design.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Shopping links">
+        <h3>SHOPPING</h3>
+        <ul class="links">
+          <li><a href="#shop">Clothing Store</a></li>
+          <li><a href="#shop">Trending Shoes</a></li>
+          <li><a href="#shop">Accessories</a></li>
+          <li><a href="#shop">Sale</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Customer services">
+        <h3>Customer Services</h3>
+        <ul class="links">
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact">Payment Methods</a></li>
+          <li><a href="#contact">Delivery</a></li>
+          <li><a href="#contact">Return &amp; Exchanges</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="copyright container">
+      <small>© 2024 All right reserved Made with ♥ by Amira Alaa</small>
+    </div>
+  </footer>
+
+  <!-- Cart drawer + overlay + toast -->
+  <div id="overlay" class="overlay"></div>
+  <aside id="cartDrawer" class="drawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-head">
+      <h3 id="cartTitle">Your Cart</h3>
+      <button class="drawer-close" aria-label="Close cart">×</button>
+    </div>
+    <ul id="cartItems" class="drawer-list"></ul>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button id="clearCart" class="btn btn-outline">Clear cart</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"><span id="toastText">Added to cart</span></div>
+
+  <!-- ===== Inline JavaScript (no backticks) ===== -->
+  <script>
+    function $(sel, root){ return (root || document).querySelector(sel); }
+    function $all(sel, root){ return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+    function money(n){ return '$' + n.toFixed(2); }
+    function showToast(msg){
+      var t = $('#toast');
+      $('#toastText').textContent = msg;
+      t.classList.add('show');
+      setTimeout(function(){ t.classList.remove('show'); }, 1600);
+    }
+
+    function load(key, def){ try{ return JSON.parse(localStorage.getItem(key) || JSON.stringify(def)); }catch(e){ return def; } }
+    function save(key, val){ localStorage.setItem(key, JSON.stringify(val)); }
+
+    var cart = load('cart', []); // [{id,title,price,img,qty}]
+
+    // Build products dictionary from DOM
+    var productCards = $all('#productGrid .card');
+    var products = {};
+    productCards.forEach(function(card){
+      var id = card.getAttribute('data-id');
+      products[id] = {
+        id: id,
+        title: $('.card-title', card).textContent.trim(),
+        price: Number(card.getAttribute('data-price')),
+        img: $('img', card).src
+      };
+    });
+
+    function renderBadges(){
+      var count = cart.reduce(function(a,b){ return a + b.qty; }, 0);
+      $('#cartCount').textContent = count;
+    }
+
+    function renderCart(){
+      var ul = $('#cartItems');
+      ul.innerHTML = '';
+      var total = 0;
+
+      if(cart.length === 0){
+        ul.innerHTML = '<li class="drawer-item"><div class="meta">Cart is empty</div></li>';
+      }else{
+        cart.forEach(function(item){
+          total += item.qty * item.price;
+          var li = document.createElement('li');
+          li.className = 'drawer-item';
+          li.setAttribute('data-id', item.id);
+          li.innerHTML =
+            '<img src="' + item.img + '" alt="">' +
+            '<div class="meta">' +
+              '<div style="font-weight:600">' + item.title + '</div>' +
+              '<small>' + money(item.price) + ' · Qty ' + item.qty + '</small>' +
+            '</div>' +
+            '<button class="btn btn-outline btn-sm remove">Remove</button>';
+          ul.appendChild(li);
+        });
+      }
+      $('#cartTotal').textContent = money(total);
+      renderBadges();
+    }
+
+    function addToCart(id, qty){
+      qty = qty || 1;
+      var p = products[id];
+      var existing = cart.find(function(i){ return i.id === id; });
+      if(existing){ existing.qty += qty; }
+      else{ cart.push({ id:p.id, title:p.title, price:p.price, img:p.img, qty:qty }); }
+      save('cart', cart);
+      renderCart();
+      showToast('Added to cart');
+    }
+
+    function removeFromCart(id){
+      cart = cart.filter(function(i){ return i.id !== id; });
+      save('cart', cart);
+      renderCart();
+    }
+
+    // Drawers
+    var overlay = $('#overlay');
+    var cartDrawer = $('#cartDrawer');
+    function openDrawer(){
+      cartDrawer.classList.add('open');
+      overlay.classList.add('open');
+      cartDrawer.setAttribute('aria-hidden','false');
+    }
+    function closeDrawer(){
+      cartDrawer.classList.remove('open');
+      overlay.classList.remove('open');
+      cartDrawer.setAttribute('aria-hidden','true');
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      // Quick add buttons
+      $all('.quick-add').forEach(function(btn){
+        btn.addEventListener('click', function(e){
+          var id = btn.closest('.card').getAttribute('data-id');
+          addToCart(id, 1);
+          e.stopPropagation();
+        });
+      });
+
+      // Also allow clicking the image
+      $all('#productGrid .card-media').forEach(function(media){
+        media.addEventListener('click', function(){
+          var id = media.closest('.card').getAttribute('data-id');
+          addToCart(id, 1);
+        });
+      });
+
+      // Smooth scroll for nav
+      $all('a[href^="#"]').forEach(function(a){
+        a.addEventListener('click', function(e){
+          var t = a.getAttribute('href');
+          if(t.length > 1){
+            e.preventDefault();
+            var el = document.querySelector(t);
+            if(el){ el.scrollIntoView({ behavior: 'smooth' }); }
+            history.pushState(null, '', t);
+          }
+        });
+      });
+
+      // Open/close cart
+      $('#openCart').addEventListener('click', openDrawer);
+      $('.drawer-close', cartDrawer).addEventListener('click', closeDrawer);
+      overlay.addEventListener('click', closeDrawer);
+
+      // Cart list events
+      $('#cartItems').addEventListener('click', function(e){
+        var li = e.target.closest('.drawer-item');
+        if(!li) return;
+        if(e.target.classList.contains('remove')){
+          removeFromCart(li.getAttribute('data-id'));
+        }
+      });
+
+      // Clear cart
+      $('#clearCart').addEventListener('click', function(){
+        cart = [];
+        save('cart', cart);
+        renderCart();
+      });
+
+      // Newsletter (demo)
+      $('#newsletterForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        showToast('Thanks! You are subscribed.');
+        e.target.reset();
+      });
+
+      renderCart();
+    });
+  </script>
+</body>
+</html>
